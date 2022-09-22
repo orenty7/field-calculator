@@ -5,6 +5,9 @@
 #include <QWidget>
 #include <QPainter>
 #include <QPaintEvent>
+#include <QLabel>
+#include <QMouseEvent>
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,8 +22,10 @@ public:
     ~MainWindow();
 
     void paintEvent(QPaintEvent *);
+    void mouseMoveEvent(QMouseEvent *);
 
 private:
     Ui::MainWindow *ui;
+    QLabel *label;
 };
 #endif // MAINWINDOW_H

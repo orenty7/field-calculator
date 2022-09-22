@@ -12,6 +12,10 @@ public:
     Canvas(QWidget *parent = nullptr);
 
     void paintEvent(QPaintEvent *);
+
+private:
+    int width;
+    int height;
 };
 
 #endif // CANVAS_H
